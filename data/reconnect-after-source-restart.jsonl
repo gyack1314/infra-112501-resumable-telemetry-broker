@@ -1,0 +1,13 @@
+{"timestamp": 0, "type": "budget", "data": {"bay": "east", "limit": 4}}
+{"timestamp": 1, "type": "subscribe", "data": {"terminal": "floor", "bays": ["east"], "window": 2, "priority": {"east": 1}}}
+{"timestamp": 2, "type": "whole", "data": {"bay": "east", "session": "e1", "seq": 1, "values": {"arm": 0}}}
+{"timestamp": 3, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 2, "event_id": "z", "kind": "started"}}
+{"timestamp": 4, "type": "drain", "data": {"terminal": "floor"}}
+{"timestamp": 5, "type": "applied", "data": {"terminal": "floor", "bay": "east", "session": "e1", "state_seq": 1}}
+{"timestamp": 6, "type": "disconnect", "data": {"terminal": "floor"}}
+{"timestamp": 7, "type": "whole", "data": {"bay": "east", "session": "e2", "seq": 1, "values": {"arm": 10}}}
+{"timestamp": 8, "type": "delta", "data": {"bay": "east", "session": "e2", "seq": 2, "base_seq": 1, "changes": {"arm": 11}}}
+{"timestamp": 9, "type": "resume", "data": {"terminal": "floor", "seen_states": [{"bay": "east", "session": "e1", "state_seq": 1}], "confirmed_events": []}}
+{"timestamp": 10, "type": "drain", "data": {"terminal": "floor"}}
+{"timestamp": 11, "type": "ack", "data": {"terminal": "floor", "bay": "east", "session": "e1", "event_id": "z"}}
+{"timestamp": 12, "type": "inspect", "data": {"terminal": "floor"}}

@@ -1,0 +1,21 @@
+{"timestamp": 0, "type": "budget", "data": {"bay": "east", "limit": 4}}
+{"timestamp": 0, "type": "budget", "data": {"bay": "west", "limit": 3}}
+{"timestamp": 1, "type": "subscribe", "data": {"terminal": "desk", "bays": ["east", "west"], "window": 2, "priority": {"east": 1, "west": 2}}}
+{"timestamp": 2, "type": "whole", "data": {"bay": "east", "session": "e1", "seq": 1, "values": {"arm": 0, "axis": 3}}}
+{"timestamp": 3, "type": "delta", "data": {"bay": "east", "session": "e1", "seq": 2, "base_seq": 1, "changes": {"arm": 1}}}
+{"timestamp": 4, "type": "delta", "data": {"bay": "east", "session": "e1", "seq": 3, "base_seq": 2, "changes": {"axis": 4}}}
+{"timestamp": 5, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 4, "event_id": "a", "kind": "contact_on"}}
+{"timestamp": 6, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 5, "event_id": "b", "kind": "contact_off"}}
+{"timestamp": 7, "type": "whole", "data": {"bay": "west", "session": "w1", "seq": 1, "values": {"arm": 1}}}
+{"timestamp": 8, "type": "whole", "data": {"bay": "east", "session": "e1", "seq": 6, "values": {"arm": 1, "axis": 4}}}
+{"timestamp": 9, "type": "drain", "data": {"terminal": "desk"}}
+{"timestamp": 10, "type": "drain", "data": {"terminal": "desk"}}
+{"timestamp": 11, "type": "inspect", "data": {"terminal": "desk"}}
+{"timestamp": 12, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 7, "event_id": "c", "kind": "started"}}
+{"timestamp": 13, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 8, "event_id": "d", "kind": "completed"}}
+{"timestamp": 14, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 9, "event_id": "e", "kind": "started"}}
+{"timestamp": 15, "type": "drain", "data": {"terminal": "desk"}}
+{"timestamp": 16, "type": "drain", "data": {"terminal": "desk"}}
+{"timestamp": 17, "type": "ack", "data": {"terminal": "desk", "bay": "east", "session": "e1", "event_id": "a"}}
+{"timestamp": 18, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 9, "event_id": "e", "kind": "started"}}
+{"timestamp": 19, "type": "inspect", "data": {"bay": "east"}}
