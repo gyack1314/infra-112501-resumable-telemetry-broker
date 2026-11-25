@@ -1,0 +1,24 @@
+{"timestamp": 0, "type": "budget", "data": {"bay": "east", "limit": 3}}
+{"timestamp": 0, "type": "budget", "data": {"bay": "west", "limit": 3}}
+{"timestamp": 1, "type": "subscribe", "data": {"terminal": "ops", "bays": ["east", "west"], "window": 2, "priority": {"east": 3, "west": 1}}}
+{"timestamp": 2, "type": "whole", "data": {"bay": "east", "session": "e1", "seq": 1, "values": {"arm": 0}}}
+{"timestamp": 3, "type": "delta", "data": {"bay": "east", "session": "e1", "seq": 2, "base_seq": 1, "changes": {"arm": 1}}}
+{"timestamp": 4, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 3, "event_id": "contact-on", "kind": "contact_on"}}
+{"timestamp": 5, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 4, "event_id": "contact-off", "kind": "contact_off"}}
+{"timestamp": 6, "type": "whole", "data": {"bay": "west", "session": "w1", "seq": 1, "values": {"temp": 36}}}
+{"timestamp": 7, "type": "drain", "data": {"terminal": "ops"}}
+{"timestamp": 8, "type": "drain", "data": {"terminal": "ops"}}
+{"timestamp": 9, "type": "applied", "data": {"terminal": "ops", "bay": "east", "session": "e1", "state_seq": 2}}
+{"timestamp": 10, "type": "disconnect", "data": {"terminal": "ops"}}
+{"timestamp": 11, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 5, "event_id": "done", "kind": "completed"}}
+{"timestamp": 12, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 6, "event_id": "late-alarm", "kind": "started"}}
+{"timestamp": 13, "type": "whole", "data": {"bay": "east", "session": "e2", "seq": 1, "values": {"arm": 10}}}
+{"timestamp": 14, "type": "delta", "data": {"bay": "east", "session": "e2", "seq": 2, "base_seq": 1, "changes": {"arm": 11}}}
+{"timestamp": 15, "type": "resume", "data": {"terminal": "ops", "seen_states": [{"bay": "east", "session": "e1", "state_seq": 2}], "confirmed_events": []}}
+{"timestamp": 16, "type": "subscribe", "data": {"terminal": "ops", "bays": ["east", "west"], "window": 3, "priority": {"east": 2, "west": 1}}}
+{"timestamp": 17, "type": "drain", "data": {"terminal": "ops"}}
+{"timestamp": 18, "type": "ack", "data": {"terminal": "ops", "bay": "east", "session": "e1", "event_id": "contact-on"}}
+{"timestamp": 19, "type": "event", "data": {"bay": "east", "session": "e1", "seq": 6, "event_id": "late-alarm", "kind": "started"}}
+{"timestamp": 20, "type": "drain", "data": {"terminal": "ops"}}
+{"timestamp": 21, "type": "inspect", "data": {"bay": "east"}}
+{"timestamp": 22, "type": "inspect", "data": {"terminal": "ops"}}
